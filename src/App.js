@@ -2,11 +2,15 @@
 import './App.css';
 //import React from 'react';
 import React ,{useState} from 'react';
+import ItemsList from './ItemsList';
 
 function App() {
+const myItemsList = ['item 1', 'item 2', 'item 3'];
+
   return (
    <div className='App'>
     <MyComponent/>
+    <ItemsList items = {myItemsList}/>
    </div>
   );
 }
